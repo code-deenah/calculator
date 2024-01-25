@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2d353c;
+    /* Dark green background for the body */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background-image: url(img.jpg);
+}
+
+
+.calculator {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #48545a;
+    /* Dark green border for the calculator */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #3e474e;
+    /* Dark green background for the calculator */
+}
+
+#display {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    border: 1px solid #48545a;
+    border-radius: 5px;
+    outline: none;
+    background-color: #2d353c;
+    /* Dark green background for the display input */
+    color: #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #48545a;
+    /* Dark green border for the buttons */
+    border-radius: 5px;
+    background-color: #fff;
+    /* White background for the buttons */
+    color: navy;
+    /* Navy blue text color for the buttons */
+    cursor: pointer;
+}
+
+.equals {
+    grid-column: span 2;
+    background-color: #fdca12;
+    /* Yellow background for the equals button */
+    color: #fff;
+}
+
+button:hover {
+    background-color: #ddd;
+    /* Light gray background on hover */
+}
+
+button:active {
+    background-color: #ccc;
+    /* Slightly darker background on click */
+}
